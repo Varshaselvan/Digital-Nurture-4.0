@@ -8,7 +8,6 @@ This repository contains my complete project work for the **Cognizant Digital Nu
 
 ### 🔷 HTML, CSS, and JS Exercises
 
-|-----------------------------------|-----------------------------------------|
 |            File                   |                   Focus                 |
 |-----------------------------------|-----------------------------------------|
 | `01_intro_community_portal.html`  | HTML5 structure, semantic tags          |
@@ -22,17 +21,14 @@ This repository contains my complete project work for the **Cognizant Digital Nu
 | `09_custom_font_theme.html`       | Custom theming with Google Fonts        |
 | `10_debugging_with_devtools.html` | Debugging using Chrome DevTools         |
 | `script.js`                       | JS DOM manipulation, events, validation |
-|-----------------------------------|-----------------------------------------|
 
 ---
 
 ### 🟦 Bootstrap 5 Project
 
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------|
 |            File                  |                                              Description                                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | `bootstrap5_community_site.html` | Fully responsive event/community portal using Bootstrap 5 components like Navbar, Cards, Forms, Grid, and Buttons |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------|
 ---
 
 ### 🟩 CSS3 Features
