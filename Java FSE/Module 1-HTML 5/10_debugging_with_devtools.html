@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debugging Example - Community Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #004080;
+      color: white;
+      padding: 10px;
+    }
+    main {
+      padding: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>Community Event Portal</h2>
+  </nav>
+
+  <main>
+    <h3>Welcome to the Debug Zone!</h3>
+    <div class="card">
+      <p>Click the button below to simulate a script action:</p>
+      <button onclick="simulateAction()">Click Me</button>
+    </div>
+    <div id="output"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Community Portal</p>
+  </footer>
+
+  <script>
+    console.log("Page loaded successfully.");
+    window.onload = () => {
+      alert("Page is fully loaded.");
+    };
+
+    function simulateAction() {
+      console.log("Button clicked.");
+      let userName = "Alice";
+      document.getElementById("output").innerText = "Welcome, " + userNam;
+    }
+  </script>
+</body>
+</html>

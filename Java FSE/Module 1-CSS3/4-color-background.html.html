@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Color and Background</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Background image with fallback color */
+  body {
+    background-color: #e0f7fa;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Gradient on section header */
+  .header h2 {
+    background: linear-gradient(90deg, #007BFF, #00BFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h2>City Council Events</h2>
+  </div>
+</body>
+</html>
