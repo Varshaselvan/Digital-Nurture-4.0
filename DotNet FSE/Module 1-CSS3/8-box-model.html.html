@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Box Model and Layout</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .selected {
+    outline: 3px solid #007BFF;
+  }
+</style>
+</head>
+<body>
+<section class="eventCard selected">
+  <h3>Volunteer Signup</h3>
+  <form>
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" /><br /><br />
+    <label for="role">Role:</label><br />
+    <select id="role" name="role">
+      <option>Coordinator</option>
+      <option>Helper</option>
+      <option>Organizer</option>
+    </select>
+  </form>
+</section>
+</body>
+</html>

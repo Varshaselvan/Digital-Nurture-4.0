@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Events</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #eventArea {
+      width: 200px;
+      height: 100px;
+      background: #8ecae6;
+      text-align: center;
+      line-height: 100px;
+      margin-bottom: 12px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="eventArea">Interact with me</div>
+  <input id="textInput" placeholder="Type and press Enter" />
+
+  <script>
+    $(function() {
+      $('#eventArea').click(function() {
+        $(this).css('background-color', '#219ebc').text('Clicked');
+      });
+
+      $('#eventArea').dblclick(function() {
+        $(this).css('background-color', '#023047').text('Double Clicked');
+      });
+
+      $('#eventArea').mouseenter(function() {
+        $(this).css('background-color', '#ffb703').text('Mouse In');
+      }).mouseleave(function() {
+        $(this).css('background-color', '#8ecae6').text('Interact with me');
+      });
+
+      $('#textInput').keypress(function(e) {
+        if(e.which === 13) {
+          alert('You typed: ' + $(this).val());
+          $(this).val('');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

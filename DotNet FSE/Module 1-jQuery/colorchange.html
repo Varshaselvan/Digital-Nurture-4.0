@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Toggle</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #box {
+      width: 150px;
+      height: 150px;
+      background: white;
+      border: 1px solid #333;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <button id="colorChangeBtn">Change Color</button>
+  <div id="box"></div>
+
+  <script>
+    $(function() {
+      $('#colorChangeBtn').click(() => $('#box').css('background-color', 'red'));
+      $('#box').dblclick(() => $('#box').css('background-color', 'white'));
+    });
+  </script>
+</body>
+</html>

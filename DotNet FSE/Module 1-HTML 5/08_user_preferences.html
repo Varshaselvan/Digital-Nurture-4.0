@@ -1,0 +1,30 @@
+<label for="favEvent">Select your favorite event:</label>
+<select id="favEvent">
+  <option value="">--Select--</option>
+  <option value="marathon">Marathon</option>
+  <option value="artfair">Art Fair</option>
+</select>
+<button onclick="clearPrefs()">Clear Preferences</button>
+
+<script>
+  const select = document.getElementById('favEvent');
+
+  // Load saved preference
+  window.onload = () => {
+    const saved = localStorage.getItem('favEvent');
+    if (saved) {
+      select.value = saved;
+    }
+  };
+
+  select.onchange = () => {
+    localStorage.setItem('favEvent', select.value);
+  };
+
+  function clearPrefs() {
+    localStorage.clear();
+    sessionStorage.clear();
+    select.value = "";
+    alert('Preferences cleared.');
+  }
+</script>

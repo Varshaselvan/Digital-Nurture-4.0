@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>List Builder</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form id="addForm">
+    <input type="text" id="inputText" required />
+    <button type="submit">Add</button>
+  </form>
+
+  <ul id="items"></ul>
+  <button id="clearList">Remove All</button>
+
+  <script>
+    $(function() {
+      $('#addForm').submit(e => {
+        e.preventDefault();
+        const val = $('#inputText').val().trim();
+        if(val) {
+          $('<li>').text(val).appendTo('#items');
+          $('#inputText').val('');
+        }
+      });
+
+      $('#clearList').click(() => $('#items').empty());
+    });
+  </script>
+</body>
+</html>

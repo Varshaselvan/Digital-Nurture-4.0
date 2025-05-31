@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>jQuery Methods</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .block {
+      width: 100px;
+      height: 100px;
+      background-color: steelblue;
+      margin: 8px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+
+  <button id="btnHide">Hide</button>
+  <button id="btnShow">Show</button>
+  <button id="btnFadeOut">Fade Out</button>
+  <button id="btnFadeIn">Fade In</button>
+  <button id="btnToggle">Toggle</button>
+  <button id="btnChain">Slide Up & Down</button>
+
+  <script>
+    $(function() {
+      const blocks = $('.block');
+
+      $('#btnHide').click(() => blocks.hide());
+      $('#btnShow').click(() => blocks.show());
+      $('#btnFadeOut').click(() => blocks.fadeOut());
+      $('#btnFadeIn').click(() => blocks.fadeIn());
+      $('#btnToggle').click(() => blocks.toggle());
+      $('#btnChain').click(() => blocks.slideUp().delay(1000).slideDown());
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<form id="eventRegistration" style="max-width: 400px; margin: 20px;">
+  <label for="name">Name:</label><br />
+  <input type="text" id="name" name="name" placeholder="Your full name" required autofocus /><br /><br />
+
+  <label for="email">Email:</label><br />
+  <input type="email" id="email" name="email" placeholder="example@mail.com" required /><br /><br />
+
+  <label for="date">Event Date:</label><br />
+  <input type="date" id="date" name="date" required /><br /><br />
+
+  <label for="eventType">Event Type:</label><br />
+  <select id="eventType" name="eventType" required>
+    <option value="">Select an event</option>
+    <option value="marathon">Marathon</option>
+    <option value="artfair">Art Fair</option>
+    <option value="foodfestival">Food Festival</option>
+  </select><br /><br />
+
+  <label for="message">Additional Message:</label><br />
+  <textarea id="message" name="message" rows="4" placeholder="Your message here..."></textarea><br /><br />
+
+  <button type="submit">Register</button><br /><br />
+
+  <output id="confirmationMsg"></output>
+</form>
+
+<script>
+  document.getElementById('eventRegistration').addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.getElementById('confirmationMsg').textContent = 'Thank you for registering, ' + this.name.value + '!';
+  });
+</script>
