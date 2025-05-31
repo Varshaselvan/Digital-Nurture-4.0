@@ -31,6 +31,7 @@ This repository contains my complete project work for the **Cognizant Digital Nu
 | `bootstrap5_community_site.html` | Fully responsive event/community portal using Bootstrap 5 components like Navbar, Cards, Forms, Grid, and Buttons |
 ---
 🟣 jQuery Exercises
+
 | File                            | Focus                                             |
 | ------------------------------- | ------------------------------------------------- |
 | 01\_dom\_manipulation.html      | Basic DOM selection and manipulation using jQuery |
@@ -47,6 +48,7 @@ This repository contains my complete project work for the **Cognizant Digital Nu
 ---
 
 ### 🟤 ANSI SQL Using MySQL
+
 | File                         | Focus                                             |
 | ---------------------------- | ------------------------------------------------- |
 | 01\_create\_tables.sql       | Creating tables with primary keys and constraints |
@@ -63,6 +65,7 @@ This repository contains my complete project work for the **Cognizant Digital Nu
 ---
 
 ### 🔶 C# & ADO.NET 
+
 | File                         | Focus                                                      |
 | ---------------------------- | ---------------------------------------------------------- |
 | 01\_BasicCRUD.cs             | Basic Create, Read, Update, Delete operations with ADO.NET |
@@ -110,6 +113,28 @@ Database CRUD, Java Modules, TCP Client/Server, HTTP Client
 
 **🛠️ Internals (37–41):**  
 Bytecode tools, Reflection, Virtual Threads, Executors
+
+---
+
+🟩 Core C# & ADO.NET Programming (1–30)
+
+🔹 Fundamentals (1–7):
+Variables, Data Types, Conditionals, Basic Console I/O
+
+🔁 Control Flow & Methods (8–12):
+Loops, Recursion, Method Overloading, Delegates
+
+📚 Object-Oriented Programming (13–18):
+Classes, Inheritance, Interfaces, Properties, Events
+
+⚠️ Exception Handling & File I/O (19–22):
+Try-catch, Custom Exceptions, Reading/Writing Files
+
+🧮 Collections & LINQ (23–27):
+List, Dictionary, HashSet, LINQ Queries, Lambda Expressions
+
+🌐 ADO.NET & Database Access (28–30):
+SqlConnection, SqlCommand, DataReader, DataAdapter, Transactions
 
 ---
 
